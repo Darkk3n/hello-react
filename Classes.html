@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="app">React has not rendered yet</div>
+
+        <script type="text/babel">
+
+            class Color extends React.Component {
+                render() {
+                    var colorStyle = {
+                        height: 25,
+                        width: 150,
+                        backgroundColor: this.props.color
+                    };
+                    return (
+                        <div style={colorStyle}>{this.props.name}</div>
+                    );
+                }
+
+            }
+
+            ReactDOM.render(
+                <div>
+                    <Color color="red" name="Red" />
+                    <Color color="blue" name="Blue" />
+                    <Color color="orange" name="Orange" />
+                    <Color color="yellow" name="Yellow" />
+                    <Color color="green" name="Green" />
+                    <Color color="indigo" name="Indigo" />
+                    <Color color="violet" name="Violet" />
+                </div>,
+                document.getElementById('app'));
+        </script>
+    </body>
+
+</html>

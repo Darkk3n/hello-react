@@ -1,0 +1,36 @@
+.red{
+    background: red;
+    height: 50px;
+    width: 150px;
+}
+
+.blue{
+    background: blue;
+    height: 50px;
+    width: 150px;
+}
+
+.orange{
+    background: orange;
+    height: 50px;
+    width: 150px;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background: red;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50%
+}
